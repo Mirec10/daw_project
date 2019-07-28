@@ -35,6 +35,7 @@
         @include('admin._partials._footer')
 
     </div>
+    @include('admin._partials._delete_modal')
 </div>
 
 <!-- SCRIPTS -->
