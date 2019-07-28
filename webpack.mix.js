@@ -38,6 +38,7 @@ mix.sass('resources/assets/sass/style.scss', 'public/assets')
         'resources/assets/template/admin/css/bootstrap-datepicker.min.css',
         'resources/assets/template/admin/css/select2.min.css',
         'resources/assets/template/admin/css/jquery.bootstrap-touchspin.min.css',
+        'resources/assets/template/admin/css/lightbox.css',
         'resources/assets/template/admin/css/bootstrap.min.css',
         'resources/assets/template/admin/css/metismenu.min.css',
         'resources/assets/template/admin/css/icons.css',
@@ -93,6 +94,7 @@ mix.sass('resources/assets/sass/style.scss', 'public/assets')
         'resources/assets/template/admin/js/raphael-min.js',
         'resources/assets/template/admin/js/form-advanced.js',
         'resources/assets/template/admin/js/datatables.init.js',
+        'resources/assets/template/admin/js/lightbox.js',
         //'resources/assets/template/admin/js/dashboard.js',
         'resources/assets/template/admin/js/app.js',
         'resources/assets/js/admin.js' // this .js file must be last
