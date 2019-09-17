@@ -14,6 +14,8 @@ Route::middleware(['auth', 'admin'])->namespace('Admin')->prefix('admin')->group
     // Dashboard
     Route::get('/', ['as' => 'dashboard.index', 'uses' => 'DashboardController@index']);
 
+    //Images
+    Route::post('/images/delete/{id}', ['as' => 'images.delete', 'uses' => "ImageController@delete"]);
 });
 
 
