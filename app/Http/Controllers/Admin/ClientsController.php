@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Client;
+use App\Http\Requests\CreateClientRequest;
+use App\Http\Requests\UpdateClientRequest;
 use Illuminate\Http\Request;
 
 class ClientsController extends AdminController
@@ -17,7 +19,7 @@ class ClientsController extends AdminController
         return view('admin.clients.create');
     }
 
-    public function store(Request $request){
+    public function store(CreateClientRequest $request){
         $client = Client::create($request->all());
 
         $client->save();
@@ -35,7 +37,7 @@ class ClientsController extends AdminController
         return view('admin.clients.edit', compact('client'));
     }
 
-    public function update(Request $request, $id){
+    public function update(UpdateClientRequest $request, $id){
         $client = Client::findOrFail($id);
 
         $client->update($request->all());
