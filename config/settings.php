@@ -3,6 +3,6 @@
 return [
     'languages' => [
         'sk' => 'Slovensky',
-        'en' => 'English',
+        'de' => 'Deutsch',
     ],
 ];
