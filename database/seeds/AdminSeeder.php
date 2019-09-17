@@ -14,7 +14,7 @@ class AdminSeeder extends Seeder
      */
     public function run()
     {
-        if(!User::where('email', 'admin')->count() > 0){
+        if(!User::where('email', 'admin')->count() > 0 && env('APP_ENV') != 'production'){
             DB::table('users')->insert([
                 'username' => 'admin',
                 'name' => 'admin',
