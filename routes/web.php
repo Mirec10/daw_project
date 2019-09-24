@@ -22,6 +22,14 @@ Route::middleware(['auth', 'admin'])->namespace('Admin')->prefix('admin')->group
     Route::post('/clients/{id}', ['as' => 'clients.update', 'uses' => 'ClientsController@update']);
     Route::post('/clients/delete/{id}', ['as' => 'clients.delete', 'uses' => 'ClientsController@delete']);
 
+    // Jobs
+    Route::get('/jobs', ['as' => 'jobs.index', 'uses' => 'JobsController@index']);
+    Route::get('/jobs/create', ['as' => 'jobs.create', 'uses' => 'JobsController@create']);
+    Route::post('/jobs', ['as' => 'jobs.store', 'uses' => 'JobsController@store']);
+    Route::get('/jobs/edit/{id}', ['as' => 'jobs.edit', 'uses' => 'JobsController@edit']);
+    Route::post('/jobs/{id}', ['as' => 'jobs.update', 'uses' => 'JobsController@update']);
+    Route::post('/jobs/delete/{id}', ['as' => 'jobs.delete', 'uses' => 'JobsController@delete']);
+
     //Images
     Route::post('/images/delete/{id}', ['as' => 'images.delete', 'uses' => "ImageController@delete"]);
 
