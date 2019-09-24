@@ -29,7 +29,7 @@ class ClientsController extends AdminController
 
         $this->upload_image($request, 'image', 'clients', $client, 'profile');
 
-        $this->_setFlashMessage($request,'success', "Klient <b>$client->name_sk</b> úspešne vytvorený");
+        $this->_setFlashMessage($request,'success', "Klient <b>$client->name_sk</b> bol vytvorený");
 
         return redirect()->route('clients.index');
     }
@@ -49,7 +49,7 @@ class ClientsController extends AdminController
 
         $this->upload_image($request,'image', 'clients', $client, 'profile');
 
-        $this->_setFlashMessage($request, 'success', "Klient <b>$client->name_sk</b> úspešne zmenený");
+        $this->_setFlashMessage($request, 'success', "Klient <b>$client->name_sk</b> bol zmenený");
 
         return back();
     }
@@ -57,7 +57,7 @@ class ClientsController extends AdminController
     public function delete(Request $request, $id){
         $client = Client::findOrFail($id);
 
-        $this->_setFlashMessage($request, 'success', "Klient <b>$client->name_sk</b> úspešne vymazaný" );
+        $this->_setFlashMessage($request, 'success', "Klient <b>$client->name_sk</b> bol vymazaný" );
 
         if(count($client->images) > 0){
             foreach($client->images as $image){
