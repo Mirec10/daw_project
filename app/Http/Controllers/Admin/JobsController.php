@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Http\Requests\CreateJobRequest;
+use App\Http\Requests\UpdateJobRequest;
 use App\Job;
 use Illuminate\Http\Request;
 
@@ -17,7 +19,7 @@ class JobsController extends AdminController
         return view('admin.jobs.create');
     }
 
-    public function store(Request $request){
+    public function store(CreateJobRequest $request){
         $job = Job::create($request->all());
 
         $job->save();
@@ -33,7 +35,7 @@ class JobsController extends AdminController
         return view('admin.jobs.edit', compact('job'));
     }
 
-    public function update(Request $request, $id){
+    public function update(UpdateJobRequest $request, $id){
         $job = Job::findOrFail($id);
 
         $job->update($request->all());
