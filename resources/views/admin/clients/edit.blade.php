@@ -60,7 +60,7 @@
                                                         <div class="image-wrapper-back">
                                                             <div class="image-wrapper-back-actions">
                                                                 <a href="{{ asset($client->profile_image) }}" class="show-icon image-popup-vertical-fit">
-                                                                    <i class="fas fa-eye"></i>
+                                                                    <i class="far fa-eye"></i>
                                                                 </a>
                                                                 <form action="{{ route('images.delete', $client->images->where('profile', 1)->first()->id) }}" method="post">
                                                                     @csrf

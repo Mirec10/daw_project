@@ -25,6 +25,7 @@ $(document).ready(function() {
     table.each(function(){
         $(this).find('tr td:last, th td:last').css('width', '15%');
     });
+
     //Buttons examples
     var table = $('#datatable-buttons').DataTable({
         lengthChange: false,
