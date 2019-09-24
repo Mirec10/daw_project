@@ -25,7 +25,8 @@ class UpdateClientRequest extends CreateClientRequest
     {
         return [
             'name_sk' => 'required|max:255',
-            'name_de' => 'required|max:255'
+            'name_de' => 'required|max:255',
+            'image' => 'required|file|image'
         ];
     }
 }

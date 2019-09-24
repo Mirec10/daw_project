@@ -5,10 +5,13 @@ namespace App\Http\Controllers\Admin;
 use App\Client;
 use App\Http\Requests\CreateClientRequest;
 use App\Http\Requests\UpdateClientRequest;
+use App\Traits\UploadTrait;
 use Illuminate\Http\Request;
 
 class ClientsController extends AdminController
 {
+    use UploadTrait;
+
     public function index (){
         $clients = Client::orderBy('created_at', 'desc')->get();
 
@@ -24,7 +27,7 @@ class ClientsController extends AdminController
 
         $client->save();
 
-        //$this->upload_image($request, 'image', 'clients', $client, 'profile');
+        $this->upload_image($request, 'image', 'clients', $client, 'profile');
 
         $this->_setFlashMessage($request,'success', "Klient <b>$client->name_sk</b> úspešne vytvorený");
 
@@ -44,7 +47,7 @@ class ClientsController extends AdminController
 
         $client->save();
 
-        //$this->upload_image($request,'image', 'clients', $client, 'profile');
+        $this->upload_image($request,'image', 'clients', $client, 'profile');
 
         $this->_setFlashMessage($request, 'success', "Klient <b>$client->name_sk</b> úspešne zmenený");
 
@@ -56,12 +59,11 @@ class ClientsController extends AdminController
 
         $this->_setFlashMessage($request, 'success', "Klient <b>$client->name_sk</b> úspešne vymazaný" );
 
-        /*
         if(count($client->images) > 0){
             foreach($client->images as $image){
                 $image->delete();
             }
-        }*/
+        }
 
         $client->delete();
 

@@ -8,7 +8,8 @@ class Image extends Model
 {
     protected $fillable = [
         'image',
-        'thumb'
+        'thumb',
+        'profile'
     ];
 
     public function imageable(){

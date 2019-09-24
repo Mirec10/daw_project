@@ -19,6 +19,7 @@ class CreateImagesTable extends Migration
             $table->string('thumb')->nullable();
             $table->integer('imageable_id');
             $table->string('imageable_type');
+            $table->tinyInteger('profile')->default(0);
             $table->timestamps();
         });
     }
