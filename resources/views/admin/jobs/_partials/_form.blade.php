@@ -19,7 +19,7 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label>Čo ponúkame {{ strtoupper($key) }}</label>
-                                <input name="offer_{{ $key }}" type="text" value="{{ old("offer_$key", isset($job) ? $job->{"offer_$key"} : '') }}" class="form-control {{ $errors->has("offer_$key") ? 'parsley-error' : '' }}">
+                                <textarea name="offer_{{ $key }}" class="form-control tinymce {{ $errors->has("offer_$key") ? 'parsley-error' : '' }}">{{ old("offer_$key", isset($job) ? $job->{"offer_$key"} : '') }}</textarea>
                                 @include('admin._partials._errors', ['column' => "offer_$key"])
                             </div>
                         </div>
@@ -29,7 +29,7 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label>Čo požadujeme {{ strtoupper($key) }}</label>
-                                <input name="requirements_{{ $key }}" type="text" value="{{ old("requirements_$key", isset($job) ? $job->{"requirements_$key"} : '') }}" class="form-control {{ $errors->has("requirements_$key") ? 'parsley-error' : '' }}">
+                                <textarea name="requirements_{{ $key }}" class="form-control tinymce {{ $errors->has("requirements_$key") ? 'parsley-error' : '' }}">{{ old("requirements_$key", isset($job) ? $job->{"requirements_$key"} : '') }}</textarea>
                                 @include('admin._partials._errors', ['column' => "requirements_$key"])
                             </div>
                         </div>
@@ -39,7 +39,7 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label>Pracovná náplň {{ strtoupper($key) }}</label>
-                                <input name="description_{{ $key }}" type="text" value="{{ old("description_$key", isset($job) ? $job->{"description_$key"} : '') }}" class="form-control {{ $errors->has("description_$key") ? 'parsley-error' : '' }}">
+                                <textarea name="description_{{ $key }}" class="form-control tinymce {{ $errors->has("description_$key") ? 'parsley-error' : '' }}">{{ old("description_$key", isset($job) ? $job->{"description_$key"} : '') }}</textarea>
                                 @include('admin._partials._errors', ['column' => "description_$key"])
                             </div>
                         </div>

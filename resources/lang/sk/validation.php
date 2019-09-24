@@ -147,6 +147,15 @@ return [
     'attributes' => [
         'email' => 'E-mail',
         'password' => 'Heslo',
+        'name_sk' => 'Názov SK',
+        'name_de' => 'Názov DE',
+        'image' => 'Obrázok',
+        'offer_sk' => 'Čo ponúkame SK',
+        'offer_de' => 'Čo ponúkame DE',
+        'requirements_sk' => 'Čo požadujeme SK',
+        'requirements_de' => 'Čo požadujeme DE',
+        'description_sk' => 'Náplň práce SK',
+        'description_de' => 'Náplň práce DE',
     ],
 
 ];
