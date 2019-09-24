@@ -14,38 +14,12 @@
                 <li>
                     <a href="javascript:void(0);" class="waves-effect">
                         <i class="mdi mdi-email-outline"></i>
-                        <span>Submenu<span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span>
+                        <span>Klienti<span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span>
                     </a>
                     <ul class="submenu">
                         <li>
-                            <a href="#">
-                                Item
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Item
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="menu-title">Používatelia</li>
-
-                <li>
-                    <a href="javascript:void(0);" class="waves-effect">
-                        <i class="mdi mdi-email-outline"></i>
-                        <span>Submenu<span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span>
-                    </a>
-                    <ul class="submenu">
-                        <li>
-                            <a href="#">
-                                Item
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Item
+                            <a href="{{ route('clients.index') }}">
+                                Zoznam klientov
                             </a>
                         </li>
                     </ul>

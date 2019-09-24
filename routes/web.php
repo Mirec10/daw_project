@@ -14,6 +14,17 @@ Route::middleware(['auth', 'admin'])->namespace('Admin')->prefix('admin')->group
     // Dashboard
     Route::get('/', ['as' => 'dashboard.index', 'uses' => 'DashboardController@index']);
 
+    // Clients
+    Route::get('/clients', ['as' => 'clients.index', 'uses' => 'ClientsController@index']);
+    Route::get('/clients/create', ['as' => 'clients.create', 'uses' => 'ClientsController@create']);
+    Route::post('/clients', ['as' => 'clients.store', 'uses' => 'ClientsController@store']);
+    Route::get('/clients/edit/{id}', ['as' => 'clients.edit', 'uses' => 'ClientsController@edit']);
+    Route::post('/clients/{id}', ['as' => 'clients.update', 'uses' => 'ClientsController@update']);
+    Route::post('/clients/delete/{id}', ['as' => 'clients.delete', 'uses' => 'ClientsController@delete']);
+
+    //Images
+    Route::post('/images/delete/{id}', ['as' => 'images.delete', 'uses' => "ImageController@delete"]);
+
 });
 
 
