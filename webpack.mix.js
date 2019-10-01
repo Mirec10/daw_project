@@ -16,7 +16,16 @@ mix.sass('resources/assets/sass/style.scss', 'public/assets')
 
     .styles([
         // FRONTEND .css files
-
+        'resources/assets/template/frontend/css/bootstrap.min.css',
+        'resources/assets/template/frontend/css/font-awesome.min.css',
+        'resources/assets/template/frontend/css/flaticon.css',
+        'resources/assets/template/frontend/css/slider-pro.min.css',
+        'resources/assets/template/frontend/css/animate.css',
+        'resources/assets/template/frontend/css/owl.carousel.css',
+        'resources/assets/template/frontend/css/owl.theme.css',
+        'resources/assets/template/frontend/css/theme.min.css',
+        'resources/assets/template/frontend/css/responsive.css',
+        'resources/assets/template/frontend/css/blue.css',
         'public/assets/style.css' // this .css file must be last
     ], 'public/css/style.min.css')
 
@@ -49,7 +58,16 @@ mix.sass('resources/assets/sass/style.scss', 'public/assets')
 
     .scripts([
         // FRONTEND .js files
-
+        'resources/assets/template/frontend/js/jquery-1.11.3.min.js',
+        'resources/assets/template/frontend/js/bootstrap.min.js',
+        'resources/assets/template/frontend/js/smoothscroll.min.js',
+        'resources/assets/template/frontend/js/jquery.stellar.min.js',
+        'resources/assets/template/frontend/js/jquery.sliderPro.min.js',
+        'resources/assets/template/frontend/js/scrollspy.min.js',
+        'resources/assets/template/frontend/js/wow.min.js',
+        'resources/assets/template/frontend/js/owl.carousel.min.js',
+        'resources/assets/template/frontend/js/metisMenu.min.js',
+        'resources/assets/template/frontend/js/theme.min.js',
         'resources/assets/js/frontend.js' // this .js file must be last
     ], 'public/js/frontend.min.js')
 
