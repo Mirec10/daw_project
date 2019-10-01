@@ -23,32 +23,32 @@
 
             <div class="collapse navbar-collapse main-menu main-menu-2" id="main-menu">
                 <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a data-toggle="dropdown" href="{{ route('web.home.' . app()->getLocale()) }}">
+                    <li class="{{ request()->route()->getName() == 'web.home.' . app()->getLocale() ? 'active' : '' }}">
+                        <a href="{{ route('web.home.' . app()->getLocale()) }}">
                             {{ trans('texts.Home') }}
                         </a>
                     </li>
                     <li class="main-menu-separator"></li>
-                    <li class="active">
-                        <a data-toggle="dropdown" href="#">
+                    <li class="{{ request()->route()->getName() == 'web.services.' . app()->getLocale() ? 'active' : '' }}">
+                        <a href="#">
                             {{ trans('texts.Services') }}
                         </a>
                     </li>
                     <li class="main-menu-separator"></li>
-                    <li class="active">
-                        <a data-toggle="dropdown" href="#">
+                    <li class="{{ request()->route()->getName() == 'web.cars.' . app()->getLocale() ? 'active' : '' }}">
+                        <a href="#">
                             {{ trans('texts.Car park') }}
                         </a>
                     </li>
                     <li class="main-menu-separator"></li>
-                    <li class="active">
-                        <a data-toggle="dropdown" href="#">
+                    <li class="{{ request()->route()->getName() == 'web.jobs.' . app()->getLocale() ? 'active' : '' }}">
+                        <a href="#">
                             {{ trans('texts.Career') }}
                         </a>
                     </li>
                     <li class="main-menu-separator"></li>
-                    <li class="active">
-                        <a data-toggle="dropdown" href="#">
+                    <li class="{{ request()->route()->getName() == 'web.contact.' . app()->getLocale() ? 'active' : '' }}">
+                        <a href="#">
                             {{ trans('texts.Contact') }}
                         </a>
                     </li>

@@ -5,6 +5,18 @@ foreach(config('settings.languages') as $lang => $name){
 
     // Pages
     Route::get("$prefix/", ['as' => "web.home.$lang", 'uses' => 'PagesController@index']);
+
+    if($lang == 'sk'){
+        Route::get("$prefix/sluzby", ['as' => "web.services.$lang", 'uses' => 'PagesController@services']);
+        Route::get("$prefix/vozovy-park", ['as' => "web.cars.$lang", 'uses' => 'PagesController@cars']);
+        Route::get("$prefix/kariera", ['as' => "web.jobs.$lang", 'uses' => 'PagesController@jobs']);
+        Route::get("$prefix/kontakt", ['as' => "web.contact.$lang", 'uses' => 'PagesController@contact']);
+    }elseif($lang == 'de'){
+        Route::get("$prefix/dienstleistungen", ['as' => "web.services.$lang", 'uses' => 'PagesController@services']);
+        Route::get("$prefix/fuhrpark", ['as' => "web.cars.$lang", 'uses' => 'PagesController@cars']);
+        Route::get("$prefix/karriere", ['as' => "web.jobs.$lang", 'uses' => 'PagesController@jobs']);
+        Route::get("$prefix/kontakt", ['as' => "web.contact.$lang", 'uses' => 'PagesController@contact']);
+    }
 }
 
 
