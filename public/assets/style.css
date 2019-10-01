@@ -2,3 +2,18 @@
   display: block;
 }
 
+.why-us-list li {
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.footer .logo {
+  margin-bottom: 25px;
+}
+
+.stat-item {
+  margin-bottom: 20px;
+}
+

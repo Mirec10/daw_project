@@ -31,6 +31,7 @@
 @yield('content')
 
 @include('frontend._partials._footer')
+@include('frontend._partials._slide_menu')
 
 <!-- SCRIPTS -->
 <script src="{{ asset('js/frontend.min.js') }}" type="text/javascript"></script>
