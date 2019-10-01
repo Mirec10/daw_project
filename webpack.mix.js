@@ -68,6 +68,7 @@ mix.sass('resources/assets/sass/style.scss', 'public/assets')
         'resources/assets/template/frontend/js/owl.carousel.min.js',
         'resources/assets/template/frontend/js/metisMenu.min.js',
         'resources/assets/template/frontend/js/theme.min.js',
+        'resources/assets/template/frontend/js/jquery.matchHeight-min.js',
         'resources/assets/js/frontend.js' // this .js file must be last
     ], 'public/js/frontend.min.js')
 

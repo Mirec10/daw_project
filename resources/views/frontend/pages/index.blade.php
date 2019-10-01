@@ -1,14 +1,7 @@
 @extends('layout.frontend')
 
 @section('content')
-
-    <!-- =========================
-       MAIN SLIDER
-   ============================== -->
     <div id="main-slider-2" class="main-slider main-slider-2">
-
-        <!-- === SLIDER BUTTONS === -->
-
         <a class="main-slider-2-button-prev" href="#">
             <div class="my-btn my-btn-grey">
                 <div class="my-btn-bg-top"></div>
@@ -30,20 +23,12 @@
         </a>
 
         <div class="sp-slides">
-
-            <!-- === SLIDER ITEM === -->
-
             <div class="sp-slide">
-
-                <!-- === slide overlay === -->
                 <div class="main-slider-overlay"></div>
 
-                <!-- === slide image === -->
                 <img class="sp-image" src="assets/slider-pro/css/images/blank.gif"
                      data-src="media/main-slider/1.jpg"
                      data-retina="media/main-slider/1.jpg" alt="" />
-
-                <!-- === slide container === -->
                 <div class="container">
                     <div class="main-slider-content">
                         <h2 class="sp-layer"
@@ -159,144 +144,88 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-    <!-- =========================
-        END MAIN SLIDER
-    ============================== -->
 
-
-    <!-- =========================
-        SERVICES
-    ============================== -->
     <section class="def-section home-services">
         <div class="container">
             <div class="row">
-
-                <!-- === SERVICE ITEM === -->
-
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-
                     <div class="service">
                         <div class="service-icon">
-                            <i class="flaticon-transport222"></i>
+                            <i class="flaticon-email114"></i>
                         </div>
-                        <h3>road freight</h3>
+                        <h3 class="match-height">
+                            {{ trans('texts.Customer') }}
+                        </h3>
                         <div class="service-text">
-                            <p>Integer congue, elit semper laoreet sed<br>lectus orci posuh nisl tempor<br>lacus felis ac mauris.<br>elit non in urna.</p>
-                        </div>
-                        <div class="service-button">
-                            <a href="05_service_detail.html">
-                                <div class="my-btn my-btn-default">
-                                    <div class="my-btn-bg-top"></div>
-                                    <div class="my-btn-bg-bottom"></div>
-                                    <div class="my-btn-text">
-                                        MORE
-                                    </div>
-                                </div>
-                            </a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
                         </div>
                     </div>
-
                 </div>
 
-                <!-- === SERVICE ITEM === -->
-
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="service-mark">
-
                     <div class="service-mark-border-top"></div>
                     <div class="service-mark-border-right"></div>
                     <div class="service-mark-border-bottom"></div>
                     <div class="service-mark-border-left"></div>
                     <div class="service">
                         <div class="service-icon">
-                            <i class="flaticon-transport358"></i>
+                            <i class="flaticon-group2"></i>
                         </div>
-                        <h3>air freight</h3>
+                        <h3 class="match-height">
+                            {{ trans('texts.Solution') }}
+                        </h3>
                         <div class="service-text">
-                            <p>Integer congue, elit semper laoreet sed<br>lectus orci posuh nisl tempor<br>lacus felis ac mauris.<br>elit non in urna.</p>
-                        </div>
-                        <div class="service-button">
-                            <a href="05_service_detail.html">
-                                <div class="my-btn my-btn-default">
-                                    <div class="my-btn-bg-top"></div>
-                                    <div class="my-btn-bg-bottom"></div>
-                                    <div class="my-btn-text">
-                                        MORE
-                                    </div>
-                                </div>
-                            </a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
                         </div>
                     </div>
-
                 </div>
 
-                <!-- === SERVICE ITEM === -->
-
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-
                     <div class="service">
                         <div class="service-icon">
-                            <i class="flaticon-transport548"></i>
+                            <i class="flaticon-direction248"></i>
                         </div>
-                        <h3>ocean freight</h3>
+                        <h3 class="match-height">
+                            {{ trans('texts.Order') }}
+                        </h3>
                         <div class="service-text">
-                            <p>Integer congue, elitse mper laoreet sed<br>lectus orci posuh nisl tempor<br>lacus felis ac mauris.<br>elit non in urna.</p>
-                        </div>
-                        <div class="service-button">
-                            <a href="05_service_detail.html">
-                                <div class="my-btn my-btn-default">
-                                    <div class="my-btn-bg-top"></div>
-                                    <div class="my-btn-bg-bottom"></div>
-                                    <div class="my-btn-text">
-                                        MORE
-                                    </div>
-                                </div>
-                            </a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
                         </div>
                     </div>
-
                 </div>
 
-                <!-- === SERVICE ITEM === -->
-
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-
                     <div class="service">
                         <div class="service-icon">
-                            <i class="flaticon-road40"></i>
+                            <i class="flaticon-map58"></i>
                         </div>
-                        <h3>expeditied</h3>
+                        <h3 class="match-height">
+                            {{ trans('texts.Reciept') }}
+                        </h3>
                         <div class="service-text">
-                            <p>Integer congue, elit semper laoreet sed<br>lectus orci posuh nisl tempor<br>lacus felis ac mauris.<br>elit non in urna.</p>
-                        </div>
-                        <div class="service-button">
-                            <a href="05_service_detail.html">
-                                <div class="my-btn my-btn-default">
-                                    <div class="my-btn-bg-top"></div>
-                                    <div class="my-btn-bg-bottom"></div>
-                                    <div class="my-btn-text">
-                                        MORE
-                                    </div>
-                                </div>
-                            </a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
                         </div>
                     </div>
-
                 </div>
 
             </div>
         </div>
     </section>
-    <!-- =========================
-       END SERVICES
-   ============================== -->
 
-
-    <!-- ===================================
-        SECTION ABOUT US AND GET QUOTE
-    ======================================== -->
     <section class="def-section about-quote">
         <div class="section-bg-left"></div>
         <div class="section-bg-right"></div>
