@@ -69,7 +69,6 @@
                 <div class="home-clients">
                     <div class="title-group">
                         <h2>Klienti</h2>
-                        <div class="subtitle with-square">Lorem ipsum</div>
                     </div>
 
                     <div class="home-clients-carousel owl-carousel owl-theme" id="owl-clients">
