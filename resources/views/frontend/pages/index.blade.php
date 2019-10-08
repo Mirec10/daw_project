@@ -1,5 +1,9 @@
 @extends('layout.frontend')
 
+@section('menu')
+    @include('frontend._partials._menu', ['navbar' => 'main-navbar-2', 'menu' => 'main-menu-2'])
+@endsection
+
 @section('content')
     <div id="main-slider-2" class="main-slider main-slider-2">
         <a class="main-slider-2-button-prev" href="#">

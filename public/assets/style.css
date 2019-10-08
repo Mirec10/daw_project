@@ -17,3 +17,17 @@
   margin-bottom: 20px;
 }
 
+.service-block {
+  margin-bottom: 40px;
+}
+
+.service-block h5 {
+  color: #00c0e2;
+  margin-bottom: 20px;
+}
+
+.service-block p {
+  font-size: 14px;
+  text-align: left;
+}
+

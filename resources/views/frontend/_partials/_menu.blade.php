@@ -1,4 +1,4 @@
-<div class="main-navbar main-navbar-2">
+<div class="main-navbar {{ $navbar }}">
     <div class="container">
         <div class="row">
             <div class="logo" id="main-logo">
@@ -21,7 +21,7 @@
                 </a>
             </div>
 
-            <div class="collapse navbar-collapse main-menu main-menu-2" id="main-menu">
+            <div class="collapse navbar-collapse main-menu {{ $menu }}" id="main-menu">
                 <ul class="nav navbar-nav">
                     <li class="{{ request()->route()->getName() == 'web.home.' . app()->getLocale() ? 'active' : '' }}">
                         <a href="{{ route('web.home.' . app()->getLocale()) }}">

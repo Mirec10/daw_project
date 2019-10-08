@@ -26,7 +26,7 @@
 <body>
 
 @include('frontend._partials._preloader')
-@include('frontend._partials._menu')
+@yield('menu')
 
 @yield('content')
 

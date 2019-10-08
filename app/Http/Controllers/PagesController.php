@@ -13,7 +13,9 @@ class PagesController extends Controller
     }
 
     public function services(){
-        return view('frontend.pages.services');
+        $clients = Client::orderBy('created_at', 'desc')->get();
+
+        return view('frontend.pages.services', compact('clients'));
     }
 
     public function cars(){
