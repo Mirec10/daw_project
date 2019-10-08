@@ -2,10 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Client;
+
 class PagesController extends Controller
 {
     public function index(){
-        return view('frontend.pages.index');
+        $clients = Client::orderBy('created_at', 'desc')->get();
+
+        return view('frontend.pages.index', compact('clients'));
     }
 
     public function services(){
