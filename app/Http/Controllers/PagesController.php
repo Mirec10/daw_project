@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Client;
+use App\Job;
 
 class PagesController extends Controller
 {
@@ -19,7 +20,9 @@ class PagesController extends Controller
     }
 
     public function jobs(){
-        return view('frontend.pages.jobs');
+        $jobs = Job::orderBy('created_at', 'desc')->get();
+
+        return view('frontend.pages.jobs', compact('jobs'));
     }
 
     public function contact(){

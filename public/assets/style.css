@@ -36,3 +36,15 @@
   margin-bottom: 14px;
 }
 
+.job-block {
+  margin-bottom: 60px;
+}
+
+.job-block .job-heading {
+  font-weight: 700;
+  font-size: 18px;
+  color: #00c0e2;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
