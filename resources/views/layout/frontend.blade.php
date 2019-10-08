@@ -30,6 +30,7 @@
 
 @yield('content')
 
+@include('frontend._partials._clients')
 @include('frontend._partials._footer')
 @include('frontend._partials._slide_menu')
 
