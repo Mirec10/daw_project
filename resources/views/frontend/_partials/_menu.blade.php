@@ -30,25 +30,25 @@
                     </li>
                     <li class="main-menu-separator"></li>
                     <li class="{{ request()->route()->getName() == 'web.services.' . app()->getLocale() ? 'active' : '' }}">
-                        <a href="#">
+                        <a href="{{ route('web.services.' . app()->getLocale()) }}">
                             {{ trans('texts.Services') }}
                         </a>
                     </li>
                     <li class="main-menu-separator"></li>
                     <li class="{{ request()->route()->getName() == 'web.cars.' . app()->getLocale() ? 'active' : '' }}">
-                        <a href="#">
+                        <a href="{{ route('web.cars.' . app()->getLocale()) }}">
                             {{ trans('texts.Car park') }}
                         </a>
                     </li>
                     <li class="main-menu-separator"></li>
                     <li class="{{ request()->route()->getName() == 'web.jobs.' . app()->getLocale() ? 'active' : '' }}">
-                        <a href="#">
+                        <a href="{{ route('web.jobs.' . app()->getLocale()) }}">
                             {{ trans('texts.Career') }}
                         </a>
                     </li>
                     <li class="main-menu-separator"></li>
                     <li class="{{ request()->route()->getName() == 'web.contact.' . app()->getLocale() ? 'active' : '' }}">
-                        <a href="#">
+                        <a href="{{ route('web.contact.' . app()->getLocale()) }}">
                             {{ trans('texts.Contact') }}
                         </a>
                     </li>
