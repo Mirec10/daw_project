@@ -17,6 +17,8 @@ foreach(config('settings.languages') as $lang => $name){
         Route::get("$prefix/karriere", ['as' => "web.jobs.$lang", 'uses' => 'PagesController@jobs']);
         Route::get("$prefix/kontakt", ['as' => "web.contact.$lang", 'uses' => 'PagesController@contact']);
     }
+
+    Route::post("$prefix/kontakt", ['as' => "web.contact.post.$lang", 'uses' => 'PagesController@email']);
 }
 
 

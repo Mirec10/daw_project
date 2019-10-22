@@ -52,28 +52,49 @@
 
                 <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
                     <div class="contacts-form row">
-                        <div class="send-result"></div>
-                        <form name="contact-form" id="contact-form" method="POST" action="javascript:void(null);" onsubmit="sendmail_2();">
+                        <div class="send-result">
+                            @if(isset($error))
+                                <div class="alert alert-danger alert-dismissable">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                    {{ $error }}
+                                </div>
+                                <div class="error-message">{{ $error }}</div>
+                            @endif
+                            @if(isset($success))
+                                <div class="alert alert-success alert-dismissable">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                    {{ $success }}
+                                </div>
+                            @endif
+                        </div>
+                        <form action="{{ route('web.contact.post.' . app()->getLocale()) }}" method="post">
+                            @csrf
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 contacts-form-item">
-                                <input type="text" name="contact-name" placeholder="Vaše meno" />
+                                @include('frontend._partials._errors', ['column' => 'name'])
+                                <input type="text" name="name" placeholder="Vaše meno" value="{{ old('name') }}">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 contacts-form-item">
-                                <input type="text" name="contact-phone" placeholder="Váš telefón" />
+                                @include('frontend._partials._errors', ['column' => 'phone'])
+                                <input type="text" name="phone" placeholder="Váš telefón" value="{{ old('phone') }}">
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 contacts-form-item">
-                                <input type="text" name="contact-email" placeholder="Váš e-mail" />
+                                @include('frontend._partials._errors', ['column' => 'email'])
+                                <input type="text" name="email" placeholder="Váš e-mail" value="{{ old('email') }}">
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 contacts-form-item">
-                                <textarea name="contact-message" placeholder="Ako Vám môžeme pomôcť?"></textarea>
+                                @include('frontend._partials._errors', ['column' => 'message'])
+                                <textarea name="message" placeholder="Ako Vám môžeme pomôcť?">{{ old('message') }}</textarea>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 contacts-form-item contacts-form-button">
-                                <button><span class="my-btn my-btn-grey">
+                                <button>
+                                    <span class="my-btn my-btn-grey">
 									<span class="my-btn-bg-top"></span>
 									<span class="my-btn-bg-bottom"></span>
 									<span class="my-btn-text">
 										ODOSLAŤ
 									</span>
-								</span></button>
+								</span>
+                                </button>
                             </div>
                         </form>
                     </div>
