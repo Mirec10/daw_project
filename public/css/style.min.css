@@ -3970,3 +3970,54 @@ textarea {
   display: block;
 }
 
+.why-us-list li {
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.footer .logo {
+  margin-bottom: 25px;
+}
+
+.stat-item {
+  margin-bottom: 20px;
+}
+
+.service-block {
+  margin-bottom: 40px;
+}
+
+.service-block h5 {
+  color: #00c0e2;
+  margin-bottom: 20px;
+}
+
+.service-block p {
+  font-size: 14px;
+  text-align: left;
+}
+
+.cars-list li {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.job-block {
+  margin-bottom: 60px;
+}
+
+.job-block .job-heading {
+  font-weight: 700;
+  font-size: 18px;
+  color: #00c0e2;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.error-color {
+  color: #c80900;
+  font-weight: 700;
+}
+

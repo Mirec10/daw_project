@@ -26,11 +26,13 @@
 <body>
 
 @include('frontend._partials._preloader')
-@include('frontend._partials._menu')
+@yield('menu')
 
 @yield('content')
 
+@include('frontend._partials._clients')
 @include('frontend._partials._footer')
+@include('frontend._partials._slide_menu')
 
 <!-- SCRIPTS -->
 <script src="{{ asset('js/frontend.min.js') }}" type="text/javascript"></script>
