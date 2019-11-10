@@ -88,7 +88,7 @@
                 &copy {{ \Carbon\Carbon::now()->year }} Damaro Slovakia |
                 Všetky práva vyhradené. |
                 Vytvorila spoločnosť
-                <a href="https://www.demi.sk/" class="color-primary">
+                <a href="https://www.demi.sk/" target="_blank" class="color-primary">
                     <b>DeMi Studio</b>
                 </a>
             </div>
