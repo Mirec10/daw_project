@@ -52,6 +52,22 @@
                             {{ trans('texts.Contact') }}
                         </a>
                     </li>
+                    <li class="main-menu-separator"></li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" href="javascript:void(0)">
+                            {{ app()->getLocale() }}
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            @foreach(config('settings.languages') as $key => $lang)
+                                <li>
+                                    <a href="{{ route('web.home.' . $key) }}" class="text-uppercase">
+                                        {{ $key }}
+                                    </a>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </li>
                 </ul>
             </div>
 

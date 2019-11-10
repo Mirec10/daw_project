@@ -29,4 +29,7 @@ return [
     'why-text-3' => 'šikovní vodiči s 10 a viac ročnou praxou',
     'why-text-4' => 'moderný a rozširujúci sa vozový park',
     'why-text-5' => 'pri dlhodobej spolupráci individuálne ceny a zľavy',
+
+    'Your message could not be send' => 'Vaša správa bola úspešne odoslaná!',
+    'Your message was sent successfully' => 'Vašu správu sa bohužiaľ nepodarilo odoslať.'
 ];
