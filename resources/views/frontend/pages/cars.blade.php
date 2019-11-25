@@ -43,7 +43,7 @@
                     </ul>
                 </div>
                 <div class="col-sm-6 col-xs-12">
-                    <img src="{{ asset('img/banner/cars.png') }}" alt="" class="img-responsive">
+                    <img src="{{ asset('img/pages/cars-1.jpg') }}" alt="" class="img-responsive">
                 </div>
             </div>
         </div>

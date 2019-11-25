@@ -29,9 +29,9 @@
         <div class="sp-slides">
             <div class="sp-slide">
                 <div class="main-slider-overlay"></div>
-                <img class="sp-image" src="{{ asset('img/slider/truck-1.jpg') }}"
-                     data-src="{{ asset('img/slider/truck-1.jpg') }}"
-                     data-retina="{{ asset('img/slider/truck-1.jpg') }}" alt="" />
+                <img class="sp-image" src="{{ asset('img/slider/slide-1.jpg') }}"
+                     data-src="{{ asset('img/slider/slide-1.jpg') }}"
+                     data-retina="{{ asset('img/slider/slide-1.jpg') }}" alt="" />
                 <div class="container">
                     <div class="main-slider-content">
                         <h2 class="sp-layer"
@@ -51,9 +51,9 @@
 
             <div class="sp-slide">
                 <div class="main-slider-overlay"></div>
-                <img class="sp-image" src="{{ asset('img/slider/truck-2.jpg') }}"
-                     data-src="{{ asset('img/slider/truck-2.jpg') }}"
-                     data-retina="{{ asset('img/slider/truck-2.jpg') }}" alt="" />
+                <img class="sp-image" src="{{ asset('img/slider/slide-2.jpg') }}"
+                     data-src="{{ asset('img/slider/slide-2.jpg') }}"
+                     data-retina="{{ asset('img/slider/slide-2.jpg') }}" alt="" />
                 <div class="container">
                     <div class="main-slider-content">
                         <h2 class="sp-layer"
@@ -65,28 +65,6 @@
                         <h2 class="sp-layer color-primary"
                             data-position="centerCenter" data-vertical="10"
                             data-show-transition="down" data-hide-transition="down" data-show-delay="400" data-hide-delay="400">
-                            Lorem ipsum dolor sit
-                        </h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="sp-slide">
-                <div class="main-slider-overlay"></div>
-                <img class="sp-image" src="{{ asset('img/slider/truck-3.jpg') }}"
-                     data-src="{{ asset('img/slider/truck-3.jpg') }}"
-                     data-retina="{{ asset('img/slider/truck-3.jpg') }}" alt="" />
-                <div class="container">
-                    <div class="main-slider-content">
-                        <h2 class="sp-layer"
-                            data-position="centerCenter" data-vertical="-55"
-                            data-show-transition="up" data-hide-transition="up" data-show-delay="200" data-hide-delay="200">
-                            Lorem ipsum dolor
-                        </h2>
-
-                        <h2 class="sp-layer color-primary"
-                            data-position="centerCenter" data-vertical="10"
-                            data-show-transition="up" data-hide-transition="up" data-show-delay="400" data-hide-delay="400">
                             Lorem ipsum dolor sit
                         </h2>
                     </div>
